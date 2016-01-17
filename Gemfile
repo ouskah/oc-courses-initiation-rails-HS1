@@ -3,12 +3,14 @@ source 'https://rubygems.org'
 
 
 
-# gestion des authentifications
+# gem Devise gestion des authentifications
 gem 'devise', '~> 3.5', '>= 3.5.3'
 
 # gem Bootstrap-sass
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
+# gem Pundit
+gem 'pundit', '~> 1.1'
 
 
 

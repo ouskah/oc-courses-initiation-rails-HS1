@@ -10,15 +10,8 @@
 
 <br>
 
-
-<% form_tag "/users/#{@user.id}", method: "delete" do %>
-    <input type="submit" value="Supprimer le compte" />
-<% end %>
-
-<br>
-
 <%= form_tag "/users/#{@user.id}", method: "delete" do %>
-  <input type="submit" value="Supprimer le compte" />
+  <input type="submit" value="Valider la suppression" />
 <% end %>
 
 <br>

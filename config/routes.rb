@@ -9,13 +9,14 @@ Rails.application.routes.draw do
     get "gem-pundit"                =>              "pages#pundit" 
     
     get "users"                     =>              "users#index"
-
+    
+    
     get "users/:id"                 =>              "users#show"
     
-    delete "users/:id"              =>              "users#destroy"
         
-    
-    
+    delete "users/:id"              =>              "users#destroy"
+
+
    
     
     
