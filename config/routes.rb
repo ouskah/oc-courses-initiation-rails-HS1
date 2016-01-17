@@ -2,18 +2,14 @@ Rails.application.routes.draw do
     
     
     
+    root "pages#home"
+
+    get "gem-devise"                =>              "pages#devise"    
+
+    get "gem-pundit"                =>              "pages#pundit" 
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    #get "users"                    =>              "pages#index"
+
     
     
     

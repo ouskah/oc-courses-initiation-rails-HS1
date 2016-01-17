@@ -3,7 +3,11 @@ source 'https://rubygems.org'
 
 
 
+# gestion des authentifications
+gem 'devise', '~> 3.5', '>= 3.5.3'
 
+# gem Bootstrap-sass
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 
 
