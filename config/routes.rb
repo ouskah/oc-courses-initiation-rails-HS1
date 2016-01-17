@@ -1,17 +1,22 @@
 Rails.application.routes.draw do
     
-    
-    
+    devise_for :users
+
     root "pages#home"
 
     get "gem-devise"                =>              "pages#devise"    
 
     get "gem-pundit"                =>              "pages#pundit" 
     
-    #get "users"                    =>              "pages#index"
+    get "users"                     =>              "users#index"
 
+    get "users/:id"                 =>              "users#show"
+    
+    delete "users/:id"              =>              "users#destroy"
+        
     
     
+   
     
     
     

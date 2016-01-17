@@ -1,0 +1,10 @@
+<h3>Liste des utilisateurs (<%= @users.count %>)</h3>
+   <br>
+<% @users.each do |user| %>
+    <p>Utilisateur : <%= user.id %></p>
+    <p>Mail : <%= user.email %></p>
+    <p>Compte créé le : <%= user.created_at %></p>
+    <a href="users/<%= user.id %>">Supprimer ce compte</a>
+    <br>
+    <hr><hr>
+<% end %>

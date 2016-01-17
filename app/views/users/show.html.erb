@@ -1,0 +1,26 @@
+<h5>Utilisateur : <%= @user.id %></h5>
+    
+<br>    
+
+<p>Email : <%= @user.email %></p>
+
+<br>
+
+<p>Compte créé le : <%= @user.created_at %></p>
+
+<br>
+
+
+<% form_tag "/users/#{@user.id}", method: "delete" do %>
+    <input type="submit" value="Supprimer le compte" />
+<% end %>
+
+<br>
+
+<%= form_tag "/users/#{@user.id}", method: "delete" do %>
+  <input type="submit" value="Supprimer le compte" />
+<% end %>
+
+<br>
+
+<a href="/users"> Retourner à la liste des utilisateurs</a>
